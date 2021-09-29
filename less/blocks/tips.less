@@ -1,0 +1,173 @@
+.tips {
+  text-transform: uppercase;
+  text-align: left;
+  padding: 35px 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+    padding-left: 36px;
+    padding-right: 31px;
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  &__item {
+    position: relative;
+    padding-bottom: 26px;
+    padding-left: 69px;
+    padding-right: 11px;
+
+    &:nth-child(2) {
+      padding-right: 31px;
+    }
+
+    @media (max-width: @mobile-width-only) {
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+    @media (min-width: @tablet-width) {
+      padding: 0 35px;
+      padding-top: 158px;
+      padding-bottom: 60px;
+      text-align: center;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 80px;
+    }
+  }
+
+  .item {
+    &__title {
+      margin: 0;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      padding-bottom: 25px;
+
+      @media (min-width: @tablet-width) {
+        font-size: 21px;
+        padding-bottom: 23px;
+      }
+    }
+
+    &__text {
+      margin: 0;
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    &__house {
+      @media (min-width: @tablet-width) {
+        order: 1;
+      }
+
+      &::before {
+        position: absolute;
+        content: url(../img/icon-house.svg);
+        top: 0;
+        left: 21px;
+        transform: translateY(-25%);
+
+        width: 39px;
+        height: 37px;
+
+        @media (min-width: @tablet-width) {
+          left: 0;
+          // transform: translateX(125%);
+          // transform: translateY(100%);
+          transform: translate3d(117%, 75%, 0);
+
+          width: 75px;
+          height: 72px;
+        }
+
+        @media (min-width: @desktop-width) {
+          transform: translate3d(225%, 75%, 0);
+        }
+      }
+    }
+
+    &__burger {
+      @media (max-width: @mobile-width-only) {
+        br {
+          display: none;
+        }
+      }
+
+      @media (min-width: @tablet-width) {
+        order: 2;
+        // max-width: 180px;
+      }
+
+      // background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='40px' height='34.9px' fill='%2381B3D2' viewBox='0 0 76.166 68.959' enable-background='new 0 0 76.166 68.959' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M71.914,46.042H4.252C1.914,46.042,0,47.955,0,50.294v3.454C0,56.086,1.914,58,4.252,58h0.956v1.037 c0,5.457,4.464,9.922,9.921,9.922h45.908c5.456,0,9.921-4.465,9.921-9.922V58h0.956c2.339,0,4.252-1.914,4.252-4.252v-3.454 C76.166,47.955,74.253,46.042,71.914,46.042z M67.958,59.037c0,3.815-3.104,6.922-6.921,6.922H15.129 c-3.816,0-6.921-3.104-6.921-6.922V58h59.75V59.037z M73.166,53.748c0,0.679-0.573,1.252-1.252,1.252H4.252 C3.573,55,3,54.427,3,53.748v-3.454c0-0.679,0.573-1.252,1.252-1.252h67.662c0.679,0,1.252,0.573,1.252,1.252V53.748z'/%3E%3Cpolygon points='16.162,37.856 21.635,41.856 27.112,37.856 32.591,41.856 38.069,37.856 43.548,41.856 49.026,37.856 54.505,41.856 59.985,37.856 65.474,41.856 71.842,37.212 70.074,34.788 65.474,38.144 59.985,34.144 54.505,38.144 49.026,34.143 43.548,38.144 38.069,34.143 32.591,38.144 27.112,34.143 21.636,38.144 16.163,34.142 10.686,38.144 6.093,34.789 4.323,37.211 10.686,41.856 '/%3E%3Cpath d='M70.888,31.094c0.041-0.61,0.055-2.616,0.037-3C70.242,12.476,55.804,0,38.083,0C20.363,0,5.924,12.476,5.241,28.094 c-0.017,0.384-0.004,2.389,0.039,3H70.888z M38.083,3c16.031,0,29.15,11.154,29.842,25.094H8.241C8.933,14.154,22.051,3,38.083,3z'/%3E%3Ccircle cx='38.083' cy='15.042' r='2'/%3E%3Ccircle cx='30.083' cy='10.083' r='2'/%3E%3Ccircle cx='46.083' cy='10.083' r='2'/%3E%3C/g%3E%3C/svg%3E%0A");
+
+      // background-repeat: no-repeat;
+      // background-position-x: 0;
+      // background-position-y: 10px;
+      ::before {
+        position: absolute;
+        content: url(../img/icon-burger.svg);
+        top: 0;
+        left: 18px;
+        transform: translateY(-25%);
+
+        width: 40px;
+        height: 35px;
+
+        @media (min-width: @tablet-width) {
+          left: 0;
+          transform: translate3d(115%, 84%, 0);
+          width: 76px;
+          height: 68px;
+        }
+
+        @media (min-width: @desktop-width) {
+          transform: translate3d(215%, 85%, 0);
+        }
+      }
+    }
+
+    &__gift {
+      @media (min-width: @tablet-width) {
+        order: 3;
+      }
+
+      @media (max-width: @tablet-width) {
+        br {
+          display: none;
+        }
+      }
+
+      ::before {
+        position: absolute;
+        content: url(../img/icon-gift.svg);
+        width: 32px;
+        height: 38px;
+
+        top: 0;
+        left: 25px;
+        transform: translateY(-25%);
+
+        @media (min-width: @tablet-width) {
+          left: 0;
+          transform: translate3d(150%, 65%, 0);
+          width: 64px;
+          height: 75px;
+        }
+
+        @media (min-width: @desktop-width) {
+          transform: translate3d(275%, 57%, 0);
+        }
+      }
+    }
+  }
+}

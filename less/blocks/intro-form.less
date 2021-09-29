@@ -1,0 +1,111 @@
+.intro {
+  &__logo {
+    display: flex;
+    justify-content: center;
+
+    background-color: #81b3d2;
+    background-image: url("../img/bg-intro-triangle-mobile.svg"),
+      url("../img/bg-back-mobile@1x.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/bg-intro-triangle-tablet.svg"),
+        url("../img/bg-back-tablet@1x.jpg");
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bg-intro-triangle-tablet.svg"),
+          url("../img/bg-back-tablet@2x.jpg");
+      }
+      background-size: contain, cover;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/bg-intro-triangle-desktop.svg"),
+        url(../img/bg-back-desktop@2x.jpg);
+    }
+
+    img {
+      width: 229px;
+      height: 39px;
+      padding-top: 50px;
+      padding-bottom: 65px;
+
+      @media (min-width: @tablet-width) {
+        width: 456.9px;
+        height: 77.6px;
+
+        padding-top: 75px;
+        padding-bottom: 115px;
+      }
+
+      @media (min-width: @desktop-width) {
+        width: 459.5px;
+        height: 79.8px;
+
+        padding-top: 102px;
+        padding-bottom: 120px;
+      }
+    }
+  }
+
+  &__description {
+    text-transform: uppercase;
+    line-height: 26px;
+    text-align: center;
+
+    padding-top: 36px;
+    padding-bottom: 16px;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 70px;
+      padding-bottom: 66.5px;
+      background: none;
+      border: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 114px;
+      padding-bottom: 56.5px;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+
+    margin: 0 auto;
+    padding-bottom: 35px;
+
+    width: 285px;
+
+    box-sizing: border-box;
+
+    @media (min-width: @tablet-width) {
+      min-width: 435px;
+      font-size: 30px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+
+    margin: 0 auto;
+
+    width: 285px;
+
+    @media (max-width: @mobile-width-only) {
+      & br {
+        display: none;
+      }
+    }
+
+    @media (min-width: @tablet-width) {
+      width: 520px;
+    }
+  }
+}

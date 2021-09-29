@@ -1,0 +1,113 @@
+.features {
+  // display: flex;
+  // flex-direction: column;
+  // padding-bottom: 260px;
+  // background-image: url(../../img/main-city-mobile@1x.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  &__wrapper {
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      height: 256px;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #81b3d2;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    padding-left: 13px;
+    padding-right: 12px;
+
+    @media (min-width: @tablet-width) {
+      padding: 0 32px;
+      padding-top: 40px;
+      padding-bottom: 39px;
+      box-sizing: border-box;
+      height: 256px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 47px;
+      padding-bottom: 57px;
+      padding-left: 53px;
+      padding-right: 52px;
+    }
+  }
+
+  &__image {
+    box-sizing: border-box;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+.description {
+  &__title {
+    margin: 0;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 15px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 21px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 12px;
+  }
+
+  &__slogan {
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.wrapper__second {
+  overflow: hidden;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    // grid-template-columns: 256px 512px;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    & img {
+      // height: 256px;
+      width: 100%;
+    }
+  }
+}
+
+.wrapper__second .features__description {
+  order: 2;
+}
