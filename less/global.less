@@ -71,3 +71,23 @@ img {
     margin: 0 20px;
   }
 }
+
+.container {
+  max-width: 320px;
+  width: 100%;
+  padding: 0 20px;
+
+  @media(min-width:@mobile-width-only){
+
+
+  }
+
+  @media (min-width: @tablet-width){
+    max-width: 768px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+  }
+}

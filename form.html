@@ -12,29 +12,31 @@
 
 <body class="page">
   <header class="page__header">
-    <picture>
-      <source media="(min-width: 1200px)" srcset="./img/logo-sedona-desktop.svg">
-      <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
-      <img class="header__logo" src="./img/logo-sedona-mobile.svg" alt="Логотип Седоны">
-    </picture>
-    <nav class="main-nav">
-      <button type="button" class="main-nav--closed main-nav__toggle"><span class="visually-hidden">Открыть
-          меню</span></button>
-      <ul class="site-navigation">
-        <li class="site-navigation__item">
-          <a class="site-navigation__button" href="index.html">Главная</a>
-        </li>
-        <li class="site-navigation__item">
-          <a class="site-navigation__button" href="photo.html">Фото и видео</a>
-        </li>
-        <li class="site-navigation__item">
-          <a class="site-navigation__button site-navigation__button--current" href="#">Форма отзыва</a>
-        </li>
-        <li class="site-navigation__item">
-          <a class="site-navigation__button" href="https://github.com/paketaaa/test">paketAAA</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
+        <img class="header__logo" src="./img/logo-sedona-mobile.svg" alt="Логотип Седоны">
+      </picture>
+      <nav class="main-nav">
+        <button type="button" class="main-nav__toggle--closed main-nav__toggle"><span class="visually-hidden">Открыть
+            меню</span></button>
+        <ul class="site-navigation site-navigation--closed">
+          <li class="site-navigation__item">
+            <a class="site-navigation__button" href="#">Главная</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__button" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__button site-navigation__button--current" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__button" href="https://github.com/paketaaa/test">paketAAA</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="page__main">
     <h1 class="visually-hidden">Седона</h1>
@@ -171,7 +173,7 @@
       </span>
       <ul class="footer__social">
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="https://twitter.com/home">
             <span class="visually-hidden">Твиттер</span>
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px"
@@ -186,7 +188,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="https://www.facebook.com/">
             <span class="visually-hidden">Фейсбук</span>
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px"
@@ -197,7 +199,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
             <span class="visually-hidden">Ютуб</span>
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px"
@@ -208,7 +210,7 @@
           </a>
         </li>
       </ul>
-      <a class="footer__copyright" href="#">
+      <a class="footer__copyright" href="https://htmlacademy.ru/">
         <span class="copyright__brand">
           Разработано
         </span>
@@ -221,6 +223,7 @@
       </a>
     </div>
   </footer>
+  <script src="./js/nav.js" async></script>
 </body>
 
 </html>
